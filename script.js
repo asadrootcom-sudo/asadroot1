@@ -144,9 +144,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ===== EID COUNTDOWN TIMER =====
     function startEidCountdown() {
-        // Set end date (7 days from now for demo)
+        // Set end date (10 days from now for demo)
         const now = new Date();
-        const endDate = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000));
+        const endDate = new Date(now.getTime() + (10 * 24 * 60 * 60 * 1000));
 
         function updateCountdown() {
             const currentTime = new Date();
