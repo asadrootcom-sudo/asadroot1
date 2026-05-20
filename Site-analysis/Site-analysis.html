@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsadRoot | احجز تحليل SEO احترافي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Site-analysis.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "Al8yhX_6KSORlajVn",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <!-- Background Layers -->
+    <div class="bg-layer"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+    
+    <!-- Particles -->
+    <div class="particles-wrapper" id="particlesContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+        <div class="nav-inner">
+            <a href="../index.html" class="brand-logo">
+                <div class="logo-mark">AR</div>
+                <span class="brand-name">AsadRoot</span>
+            </a>
+            
+            <ul class="nav-links-list">
+                <li><a href="../index.html#home">الرئيسية</a></li>
+                <li><a href="../index.html#packages">الباقات</a></li>
+                <li><a href="../index.html#offer">العروض</a></li>
+                <li><a href="../index.html#why-us">لماذا نحن</a></li>
+                <li><a href="../index.html#faq">الأسئلة الشائعة</a></li>
+                <li><a href="#form">احجز تحليل مجاني</a></li>
+            </ul>
+            
+            <a href="../index.html#packages" class="nav-action-btn">ابدأ الآن</a>
+            
+            <button class="mobile-hamburger" onclick="toggleMobileNav()" aria-label="القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="mobile-nav-panel" id="mobilePanel">
+        <a href="#" onclick="toggleMobileNav()">الرئيسية</a>
+        <a href="#form" onclick="toggleMobileNav()">احجز تحليل</a>
+        <a href="#" onclick="toggleMobileNav()">خدماتنا</a>
+        <a href="#" onclick="toggleMobileNav()">المشاريع</a>
+        <a href="#" onclick="toggleMobileNav()">تواصل معنا</a>
+        <a href="#form" class="nav-action-btn" style="margin-top: 1rem;" onclick="toggleMobileNav()">احجز استشارة مجانية</a>
+    </div>
+
+    <!-- Main Hero Section -->
+    <main class="hero-section" id="form">
+        <div class="hero-container">
+            <!-- Badge -->
+            <div class="hero-badge-inline">
+                <span class="badge-icon"><i class="fas fa-gem"></i></span>
+                <span>تحليل مخصص للشركات والخدمات عالية القيمة</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="hero-main-title">احجز تحليل SEO احترافي لموقعك</h1>
+
+            <!-- Description -->
+            <p class="hero-description-text">
+                دع فريق AsadRoot يحلل موقعك ويحدد فرص النمو والظهور في Google 
+                لتحقيق نتائج حقيقية وعائد استثماري فعلي لنشاطك التجاري.
+            </p>
+
+            <!-- Form Card -->
+            <div class="form-card-wrapper">
+                <div class="form-glass-card">
+                    <div class="form-header-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    
+                    <p class="form-subtitle">أدخل بياناتك للحصول على تحليل مجاني ومخصص</p>
+
+                    <form 
+                        class="seo-form" 
+                        id="seoAnalysisForm"
+                        action="https://formsubmit.co/asadroot.com@gmail.com"
+                        method="POST">
+                        <!-- Honeypot for Spam Protection -->
+                        <input type="text" name="website_url_check" class="honeypot-field" autocomplete="off" tabindex="-1">
+
+                        <!-- Package Selection -->
+                        <div class="form-group" id="packageGroup">
+                            <label class="form-label">
+                                <span class="required-star">*</span>
+                                اختر الباقة المناسبة
+                            </label>
+                            <div class="custom-select-wrapper">
+                                <select class="custom-select" id="packageSelect" name="package" required>
+                                    <option value="" disabled selected>اختر الباقة...</option>
+                                    <option value="basic">الباقة الأساسية — 1,500 ريال/شهر</option>
+                                    <option value="professional">الباقة المتقدمة — 2,000 ريال/شهر </option>
+                                    <option value="advanced">الباقة الاحترافية — 3,000 ريال/ شهر⭐</option>
+                                </select>
+                                <span class="select-arrow"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <p class="field-helper-text">
+                                <i class="fas fa-info-circle"></i>
+                                اختر الباقة المناسبة لنشاطك ليتم تجهيز تحليل مخصص.
+                            </p>
+                            <p class="error-message"><i class="fas fa-exclamation-circle"></i> <span>يرجى اختيار باقة</span></p>
+                        </div>
+
+                        <!-- Website URL -->
+                        <div class="form-group" id="websiteGroup">
+                            <label class="form-label">
+                                <span class="required-star">*</span>
+                                رابط الموقع الإلكتروني
+                            </label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="url" 
+                                    class="form-input" 
+                                    id="websiteUrl"
+                                    name="website"
+                                    placeholder="https://yourwebsite.com"
+                                    required
+                                    autocomplete="url"
+                                >
+                                <span class="input-icon"><i class="fas fa-globe"></i></span>
+                            </div>
+                            <p class="error-message"><i class="fas fa-exclamation-circle"></i> <span>يرجى إدخال رابط موقع صحيح</span></p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group" id="emailGroup">
+                            <label class="form-label">
+                                <span class="required-star">*</span>
+                                البريد الإلكتروني
+                            </label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="email" 
+                                    class="form-input" 
+                                    id="emailAddress"
+                                    name="email"
+                                    placeholder="example@company.com"
+                                    required
+                                    autocomplete="email"
+                                >
+                                <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <p class="error-message"><i class="fas fa-exclamation-circle"></i> <span>يرجى إدخال بريد إلكتروني صحيح</span></p>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-group" id="phoneGroup">
+                            <label class="form-label">
+                                <span class="required-star">*</span>
+                                رقم الجوال
+                            </label>
+                            <div class="phone-input-group">
+                                <select class="country-code-select" id="countryCode" required>
+                                    <option value="+966">🇸🇦 +966</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <option value="+965">🇰🇼 +965</option>
+                                    <option value="+974">🇶🇦 +974</option>
+                                    <option value="+973">🇧🇭 +973</option>
+                                    <option value="+968">🇴🇲 +968</option>
+                                    <option value="+20">🇪🇬 +20</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                </select>
+                                <div class="input-wrapper phone-main-input">
+                                    <input 
+                                        type="tel" 
+                                        class="form-input" 
+                                        id="phoneNumber"
+                                        name="phone"
+                                        placeholder="5XXXXXXXX"
+                                        required
+                                        autocomplete="tel"
+                                        style="padding-left: 1.3rem;"
+                                    >
+                                    <span class="input-icon"><i class="fas fa-phone"></i></span>
+                                </div>
+                            </div>
+                            <p class="error-message"><i class="fas fa-exclamation-circle"></i> <span>يرجى إدخال رقم جوال صحيح</span></p>
+                        </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="طلب تحليل SEO جديد">
+                        <input type="hidden" name="_template" value="table">
+                        <!-- Submit Button -->
+                        <div class="submit-btn-container">
+                            <button type="submit" class="submit-form-btn" id="submitBtn">
+                                <span class="btn-spinner"></span>
+                                <span class="btn-text">
+                                    <i class="fas fa-paper-plane"></i>
+                                    إرسال طلب التحليل
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="success-modal">
+            <div class="success-icon-circle">
+                <span class="success-checkmark"><i class="fas fa-check"></i></span>
+            </div>
+            <h2 class="modal-title-success">تم استلام طلبك بنجاح ✨</h2>
+            <p class="modal-desc-success">
+                سيقوم فريق AsadRoot بمراجعة موقعك وتحليله بالتفصيل، 
+                وسيتواصل معك خلال أقرب وقت ممكن لمناقشة الفرص والنتائج المتوقعة.
+            </p>
+            <button class="close-modal-btn" onclick="closeSuccessModal()">
+                حسنًا، فهمت
+            </button>
+        </div>
+    </div>
+
+    <!-- Error Toast -->
+    <div class="toast-notification" id="errorToast">
+        <i class="fas fa-times-circle"></i>
+        <span id="toastMessage">حدث خطأ ما، يرجى المحاولة مرة أخرى</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand-row">
+                <div class="logo-mark">AR</div>
+                <span style="font-size: 1.3rem; font-weight: 800;">AsadRoot</span>
+            </div>
+            
+            <p class="footer-slogan">
+                <strong>AsadRoot</strong> — نبني ظهورك الرقمي باحترافية
+            </p>
+            
+            <div class="social-links-footer">
+                <a href="https://x.com/asad_root" class="social-link" title="Twitter"><i class="ph ph-x-logo"></i></a>
+                <a href="https://youtube.com/asad.root" class="social-link" title="youtube"><i class="ph ph-youtube-logo"></i></a>
+                <!-- <a href="#" class="social-link" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a> -->
+                <a href="https://instagram.com/asad.root" class="social-link" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://wa.me/966551076802" class="social-link" title="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+                <a href="https://tiktok.com/@asad.root" class="social-link" title="tiktok"><i class="ph ph-tiktok-logo"></i></a>
+                <!-- <a href="#" class="social-link" title="Facebook"><i class="ph ph-facebook-logo"></i></a> -->
+            </div>
+            
+            <p class="footer-copyright">
+                © 2026 <strong>AsadRoot</strong>. جميع الحقوق محفوظة 
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="Site-analysis.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+</html>
+
